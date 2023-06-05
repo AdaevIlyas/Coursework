@@ -1,2 +1,1 @@
-# PropNutrition
-https://adaevilyas.github.io/PropNutrition/
+# Курсовая работа
