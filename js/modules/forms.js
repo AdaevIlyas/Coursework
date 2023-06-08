@@ -31,7 +31,7 @@ function forms(formSelector, modalTimerId) {
       const formData = new FormData(form);
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
-      postData('http://localhost:3000/requests', json)
+      postData('https://jsonplaceholder.typicode.com/posts', json)
         .then(data => {
           console.log(data);
           showThanksModal(message.succes);
@@ -67,7 +67,7 @@ function forms(formSelector, modalTimerId) {
     }, 4000);
   }
 
-  fetch('http://localhost:3000/menu')
+  fetch('https://jsonplaceholder.typicode.com/posts')
     .then(data => data.json())
     .then(res => console.log(res));
 }
